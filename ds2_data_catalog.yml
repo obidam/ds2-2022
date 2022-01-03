@@ -1,0 +1,58 @@
+plugins:
+  source:
+    - module: intake_xarray
+sources:
+    argo_global_sdl:
+      description: Global 0-1000m Standard Depth Level Argo profiles
+      driver: zarr
+      args:
+        urlpath: 'gcs://ds2data/GLOBAL_ARGO_SDL1000.zarr'
+        storage_options:
+          project: 'ds2class-2021'
+          token: anon
+          access: read_only
+    argo_global_homogeneous_sdl:
+      description: Global 0-1500m Standard Depth Level Argo profiles (homogeneously distributed in space)
+      driver: zarr
+      args:
+        urlpath: 'gcs://opendata_bdo2020/GLOB_HOMOGENEOUS_variables.zarr'
+        storage_options:
+          project: 'alert-ground-261008'
+          token: anon
+          access: read_only
+    en4:
+      description: Global EN4 time series
+      driver: zarr
+      args:
+        urlpath: 'gcs://ds2data/EN.4.2.1.f.analysis.g10.zarr'
+        storage_options:
+          project: 'ds2class-2021'
+          token: anon
+          access: read_only
+    isas15_temp_natl:
+      description: North Atlantic ISAS15 temperature time series
+      driver: zarr
+      args:
+        urlpath: 'gcs://ds2data/ISAS15_TEMP_NATL.zarr'
+        storage_options:
+          project: 'ds2class-2021'
+          token: anon
+          access: read_only
+    argo_global_vertical_mean:
+      description: Global Argo profiles vertical mean temperature
+      driver: zarr
+      args:
+        urlpath: 'gcs://opendata_bdo2020/Global_Argo_VerticalMean_Temperature.zarr'
+        storage_options:
+          project: 'alert-ground-261008'
+          token: anon
+          access: read_only
+    sea_surface_height:
+      description: Sea-surface altimetry data from The Copernicus Marine Environment (monthly(
+      driver: zarr
+      args:
+        urlpath: 'gcs://ds2data/dt_global_allsat_phy_l4_mm.zarr'
+        storage_options:
+          project: 'ds2class-2021'
+          token: anon
+          access: read_only
