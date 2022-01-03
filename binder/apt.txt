@@ -1,6 +1,2 @@
 vim
 git
-gcsfs
-intake
-intake-xarray
-zarr

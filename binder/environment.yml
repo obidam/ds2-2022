@@ -7,6 +7,10 @@ dependencies:
   # The rest of the packages are up to you!
   - xarray
   - hvplot
+  - gcsfs
+  - intake
+  - intake-xarray
+  - zarr
   - pip
   - pip:
     - sat-search
