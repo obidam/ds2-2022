@@ -14,13 +14,11 @@ Recommended order:
 
 | Practice | Open |
 |------------|:--------------|
-| Launch Dask Cluster | [![Colab](https://img.shields.io/static/v1?label=Google&message=Open+with+Colab&color=blue&style=plastic&logo=google-colab)](https://colab.research.google.com/github/obidam/ds2-2020/blob/ds2-2021/practice/environment/01-Launch_Dask_Cluster.ipynb)
-| Access to data in the cloud | [![Colab](https://img.shields.io/static/v1?label=Google&message=Open+with+Colab&color=blue&style=plastic&logo=google-colab)](https://colab.research.google.com/github/obidam/ds2-2020/blob/ds2-2021/practice/environment/02-Access_to_data_in_the_cloud.ipynb)
-| Dask - graph | [![Colab](https://img.shields.io/static/v1?label=Google&message=Open+with+Colab&color=blue&style=plastic&logo=google-colab)](https://colab.research.google.com/github/obidam/ds2-2020/blob/ds2-2021/practice/environment/03-Dask_Graph.ipynb)
-| Xarray | [![Colab](https://img.shields.io/static/v1?label=Google&message=Open+with+Colab&color=blue&style=plastic&logo=google-colab)](https://colab.research.google.com/github/obidam/ds2-2020/blob/ds2-2021/practice/environment/04-Xarray_Getting_started.ipynb)
-| Convert netcdf files to zarr format | [![Colab](https://img.shields.io/static/v1?label=Google&message=Open+with+Colab&color=blue&style=plastic&logo=google-colab)](https://colab.research.google.com/github/obidam/ds2-2020/blob/ds2-2021/practice/environment/05-Convert_netcdf_to_zarr.ipynb)
-
-
+| Launch Dask Cluster | [![Binder](https://img.shields.io/static/v1.svg?logo=Jupyter&label=Binder&message=Open+notebook&color=blue)](https://mybinder.org/v2/gh/obidam/ds2-2022/main?labpath=practice%2Fenvironment%2F01-Launch_Dask_Cluster.ipynb) |
+| Access to data in the cloud | [![Colab](https://img.shields.io/static/v1?label=Google&message=Open+with+Colab&color=blue&style=plastic&logo=google-colab)](https://colab.research.google.com/github/obidam/ds2-2020/blob/ds2-2021/practice/environment/02-Access_to_data_in_the_cloud.ipynb) [![Binder](https://img.shields.io/static/v1.svg?logo=Jupyter&label=Binder&message=Open+notebook&color=blue)](https://mybinder.org/v2/gh/obidam/ds2-2022/main?labpath=practice%2Fenvironment%2F02-Access_to_data_in_the_cloud.ipynb) |
+| Dask - graph | [![Colab](https://img.shields.io/static/v1?label=Google&message=Open+with+Colab&color=blue&style=plastic&logo=google-colab)](https://colab.research.google.com/github/obidam/ds2-2020/blob/ds2-2021/practice/environment/03-Dask_Graph.ipynb) [![Binder](https://img.shields.io/static/v1.svg?logo=Jupyter&label=Binder&message=Open+notebook&color=blue)](https://mybinder.org/v2/gh/obidam/ds2-2022/main?labpath=practice%2Fenvironment%2F03-Dask_Graph.ipynb) |
+| Xarray | [![Colab](https://img.shields.io/static/v1?label=Google&message=Open+with+Colab&color=blue&style=plastic&logo=google-colab)](https://colab.research.google.com/github/obidam/ds2-2020/blob/ds2-2021/practice/environment/04-Xarray_Getting_started.ipynb) [![Binder](https://img.shields.io/static/v1.svg?logo=Jupyter&label=Binder&message=Open+notebook&color=blue)](https://mybinder.org/v2/gh/obidam/ds2-2022/main?labpath=practice%2Fenvironment%2F04-Xarray_Getting_started.ipynb) |
+| Convert netcdf files to zarr format | [![Colab](https://img.shields.io/static/v1?label=Google&message=Open+with+Colab&color=blue&style=plastic&logo=google-colab)](https://colab.research.google.com/github/obidam/ds2-2020/blob/ds2-2021/practice/environment/05-Convert_netcdf_to_zarr.ipynb) [![Binder](https://img.shields.io/static/v1.svg?logo=Jupyter&label=Binder&message=Open+notebook&color=blue)](https://mybinder.org/v2/gh/obidam/ds2-2022/main?labpath=practice%2Fenvironment%2F05-Convert_netcdf_to_zarr.ipynb) |
 
 ### Exploratory Statistics
 
