@@ -41,6 +41,16 @@ sources:
           token: anon
           access: read_only
           consolidated: false
+    argo_global_sdl2:
+      description: Global 0-2000m Standard Depth Level Argo profiles
+      driver: zarr
+      args:
+        urlpath: 'gcs://opendata_bdo2020/GLOBAL_ARGO_SDL2000.zarr'
+        storage_options:
+          project: 'alert-ground-261008'
+          token: anon
+          access: read_only
+          consolidated: false
     isas15_temp_natl:
       description: North Atlantic ISAS15 temperature time series
       driver: zarr
@@ -55,9 +65,9 @@ sources:
       description: Sea-surface altimetry data from The Copernicus Marine Environment (monthly)
       driver: zarr
       args:
-        urlpath: 'gcs://ds2data/dt_global_allsat_phy_l4_mm.zarr'
+        urlpath: 'gcs://opendata_bdo2020/dt_global_allsat_phy_l4_mm.zarr'
         storage_options:
-          project: 'ds2class-2021'
+          project: 'alert-ground-261008'
           token: anon
           access: read_only
           consolidated: false
