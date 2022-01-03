@@ -1,44 +1,12 @@
-name: pangeo
+name: myenv
 channels:
   - conda-forge
 dependencies:
-  - python=3.6
-  - rasterio
-  - numpy
-  - scipy
-  - pandas
+  # You need the pangeo-notebook conda-forge package in your environment.yml for compatibility with pangeo cloud deployments
+  - pangeo-notebook==2021.09.30
+  # The rest of the packages are up to you!
   - xarray
-  - matplotlib
-  - dask
-  - distributed
-  - gcsfs
-  - intake::intake
-  - intake::intake-xarray
-  - s3fs
-  - scikit-image
-  - scikit-learn
-  - dask-ml
-  - bokeh
-  - pyviz/label/earthsim::holoviews
-  - pyviz/label/earthsim::panel
-  - geoviews
   - hvplot
-  - rasterio
-  - geoviews
-  - datashader
-  - netcdf4
-  - zarr
-  - numcodecs
-  - python-blosc
-  - lz4
-  - nbserverproxy
-  - jupyter
-  - jupyterlab=0.35
-  - ipywidgets
-  - ipyleaflet
-  - dask-kubernetes
+  - pip
   - pip:
-    - graphviz
-    - git+https://github.com/xgcm/xgcm.git
-    - git+https://github.com/pydata/xarray.git
-    - git+https://github.com/zarr-developers/zarr.git
+    - sat-search

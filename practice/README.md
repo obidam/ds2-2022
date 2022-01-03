@@ -12,11 +12,14 @@ Start here with a couple of notebooks to learn the possible tools that will allo
 
 Recommended order:
 
-1. Dask-Graph
-1. Launch Dask Cluster
-1. Xarray-blank / Xarray
-1. Access to data in the cloud
-1. Convert netcdf files to zarr format
+| Practice | Open |
+|------------|:--------------|
+| Launch Dask Cluster | [![Colab](https://img.shields.io/static/v1?label=Google&message=Open+with+Colab&color=blue&style=plastic&logo=google-colab)](https://colab.research.google.com/github/obidam/ds2-2020/blob/ds2-2021/practice/environment/01-Launch_Dask_Cluster.ipynb)
+| Access to data in the cloud | [![Colab](https://img.shields.io/static/v1?label=Google&message=Open+with+Colab&color=blue&style=plastic&logo=google-colab)](https://colab.research.google.com/github/obidam/ds2-2020/blob/ds2-2021/practice/environment/02-Access_to_data_in_the_cloud.ipynb)
+| Dask - graph | [![Colab](https://img.shields.io/static/v1?label=Google&message=Open+with+Colab&color=blue&style=plastic&logo=google-colab)](https://colab.research.google.com/github/obidam/ds2-2020/blob/ds2-2021/practice/environment/03-Dask_Graph.ipynb)
+| Xarray | [![Colab](https://img.shields.io/static/v1?label=Google&message=Open+with+Colab&color=blue&style=plastic&logo=google-colab)](https://colab.research.google.com/github/obidam/ds2-2020/blob/ds2-2021/practice/environment/04-Xarray_Getting_started.ipynb)
+| Convert netcdf files to zarr format | [![Colab](https://img.shields.io/static/v1?label=Google&message=Open+with+Colab&color=blue&style=plastic&logo=google-colab)](https://colab.research.google.com/github/obidam/ds2-2020/blob/ds2-2021/practice/environment/05-Convert_netcdf_to_zarr.ipynb)
+
 
 
 ### Exploratory Statistics
