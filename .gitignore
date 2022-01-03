@@ -133,4 +133,4 @@ dask-worker-space
 .idea/modules.xml
 .idea/workspace.xml
 
-./local_work
+local_work/
