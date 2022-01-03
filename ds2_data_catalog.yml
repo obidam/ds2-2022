@@ -11,6 +11,7 @@ sources:
           project: 'alert-ground-261008'
           token: anon
           access: read_only
+          consolidated: false
     en4:
       description: Global EN4 time series
       driver: zarr
@@ -29,6 +30,7 @@ sources:
           project: 'alert-ground-261008'
           token: anon
           access: read_only
+          consolidated: false
     argo_global_sdl:
       description: Global 0-1000m Standard Depth Level Argo profiles
       driver: zarr
@@ -38,6 +40,7 @@ sources:
           project: 'ds2class-2021'
           token: anon
           access: read_only
+          consolidated: false
     isas15_temp_natl:
       description: North Atlantic ISAS15 temperature time series
       driver: zarr
@@ -49,7 +52,7 @@ sources:
           access: read_only
           consolidated: false
     sea_surface_height:
-      description: Sea-surface altimetry data from The Copernicus Marine Environment (monthly(
+      description: Sea-surface altimetry data from The Copernicus Marine Environment (monthly)
       driver: zarr
       args:
         urlpath: 'gcs://ds2data/dt_global_allsat_phy_l4_mm.zarr'

@@ -15,21 +15,21 @@ Instead of working globally, you can study the ocean warming locally. In that ca
 
 *Data*:
 
-[![Colab](https://img.shields.io/static/v1?label=Google&message=Open+data+with+Colab&color=blue&style=plastic&logo=google-colab)](https://colab.research.google.com/github/obidam/ds2-2021/blob/master/project/Eg_of_access_to_data_in_the_cloud.ipynb)
+[![Colab](https://img.shields.io/static/v1?label=Google&message=Open+data+with+Colab&color=blue&style=plastic&logo=google-colab)](https://colab.research.google.com/github/obidam/ds2-2022/blob/main/project/Eg_of_access_to_data_in_the_cloud.ipynb)
 
 By default, you can use the [EN4 dataset](https://www.metoffice.gov.uk/hadobs/en4/) that is an interpolation of all available ocean observations (of temperature and salinity) onto a regular space/time grid.
 
 This dataset can be accessed this way:
     
     from intake import open_catalog
-    catalog_url = 'https://raw.githubusercontent.com/obidam/ds2-2021/main/ds2_data_catalog.yml'
+    catalog_url = 'https://raw.githubusercontent.com/obidam/ds2-2022/main/ds2_data_catalog.yml'
     cat = open_catalog(catalog_url)
     ds = cat["en4"].to_dask()
     
 or:
 
-    fs = gcsfs.GCSFileSystem(project="ds2class-2021")
-    gcsmap = fs.get_mapper("ds2data/EN.4.2.1.f.analysis.g10.zarr")
+    fs = gcsfs.GCSFileSystem(project="alert-ground-261008")
+    gcsmap = fs.get_mapper("opendata_bdo2020/EN.4.2.1.f.analysis.g10.zarr")
     ds = xr.open_zarr(gcsmap)
        
 But, if you wish, you can try to use [climate model simulations data](https://www.wcrp-climate.org/wgcm-cmip/wgcm-cmip6) that accessible here: [CMIP6 data](https://cloud.google.com/blog/products/data-analytics/new-climate-model-data-now-google-public-datasets).
@@ -44,7 +44,7 @@ But, if you wish, you can try to use [climate model simulations data](https://ww
 This dataset can be accessed this way:
     
     from intake import open_catalog
-    catalog_url = 'https://raw.githubusercontent.com/obidam/ds2-2021/main/ds2_data_catalog.yml'
+    catalog_url = 'https://raw.githubusercontent.com/obidam/ds2-2022/main/ds2_data_catalog.yml'
     cat = open_catalog(catalog_url)
     ds = cat["en4"].to_dask()
 
