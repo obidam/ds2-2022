@@ -1,3 +1,4 @@
+python==3.8
 xarray==0.19
 aiohttp==3.7
 dask==2021.9
