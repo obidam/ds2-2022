@@ -2,7 +2,7 @@
 
 ## Environment
 
-This is the Pangeo Practice Session. 
+This is the Pangeo-inspired Practice Session. 
 
 Class will take place in B01-010, January 5th, from 13h45 to 16h30.
 
