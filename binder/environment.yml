@@ -12,6 +12,7 @@ dependencies:
   - intake-xarray
   - zarr
   - cartopy
+  - scikit-learn
   - pip
   - pip:
     - sat-search
