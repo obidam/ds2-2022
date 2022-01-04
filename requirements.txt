@@ -19,3 +19,4 @@ scipy==1.7.1
 intake==0.6.3
 intake-xarray==0.5.0
 gcsfs==2021.10.1
+cloudpickle==1.6.0
