@@ -67,3 +67,7 @@ This dataset can be accessed this way:
 	zstore = df_ssh.zstore.values[-1]
 	mapper = gcs.get_mapper(zstore)
 	ds = xr.(mapper, consolidated=True)
+
+
+***
+<img src="https://github.com/obidam/ds2-2022/raw/main/logo_isblue.jpg">
