@@ -17,3 +17,6 @@ See https://github.com/obidam/ds2-2022/blob/main/practice/README.md
 ## Projects
 
 See https://github.com/obidam/ds2-2022/blob/main/project/README.md
+
+***
+<img src="https://github.com/obidam/ds2-2022/raw/main/logo_isblue.jpg">
