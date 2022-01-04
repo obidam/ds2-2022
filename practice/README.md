@@ -1,6 +1,6 @@
 # 2022 Practice sessions
 
-## Environment
+## Environment: 2022/01/05, 13h45, B01-010
 
 This is the Pangeo-inspired Practice Session. 
 
@@ -11,12 +11,13 @@ Start here with a couple of notebooks to learn the possible tools that will allo
 | Practice | Open |
 |------------|:--------------|
 | Launch Dask Cluster | [![Binder](https://img.shields.io/static/v1.svg?logo=Jupyter&label=Binder&message=Open+notebook&color=blue)](https://mybinder.org/v2/gh/obidam/ds2-2022/main?labpath=practice%2Fenvironment%2F01-Launch_Dask_Cluster.ipynb) |
-| Access to data in the cloud | [![Colab](https://img.shields.io/static/v1?label=Google&message=Open+with+Colab&color=blue&style=plastic&logo=google-colab)](https://colab.research.google.com/github/obidam/ds2-2022/blob/main/practice/environment/02-Access_to_data_in_the_cloud.ipynb) [![Binder](https://img.shields.io/static/v1.svg?logo=Jupyter&label=Binder&message=Open+notebook&color=blue)](https://mybinder.org/v2/gh/obidam/ds2-2022/main?labpath=practice%2Fenvironment%2F02-Access_to_data_in_the_cloud.ipynb) |
-| Dask - graph | [![Colab](https://img.shields.io/static/v1?label=Google&message=Open+with+Colab&color=blue&style=plastic&logo=google-colab)](https://colab.research.google.com/github/obidam/ds2-2022/blob/main/practice/environment/03-Dask_Graph.ipynb) [![Binder](https://img.shields.io/static/v1.svg?logo=Jupyter&label=Binder&message=Open+notebook&color=blue)](https://mybinder.org/v2/gh/obidam/ds2-2022/main?labpath=practice%2Fenvironment%2F03-Dask_Graph.ipynb) |
-| Xarray | [![Colab](https://img.shields.io/static/v1?label=Google&message=Open+with+Colab&color=blue&style=plastic&logo=google-colab)](https://colab.research.google.com/github/obidam/ds2-2022/blob/main/practice/environment/04-Xarray_Getting_started.ipynb) [![Binder](https://img.shields.io/static/v1.svg?logo=Jupyter&label=Binder&message=Open+notebook&color=blue)](https://mybinder.org/v2/gh/obidam/ds2-2022/main?labpath=practice%2Fenvironment%2F04-Xarray_Getting_started.ipynb) |
-| Convert netcdf files to zarr format | [![Colab](https://img.shields.io/static/v1?label=Google&message=Open+with+Colab&color=blue&style=plastic&logo=google-colab)](https://colab.research.google.com/github/obidam/ds2-2022/blob/main/practice/environment/05-Convert_netcdf_to_zarr.ipynb) [![Binder](https://img.shields.io/static/v1.svg?logo=Jupyter&label=Binder&message=Open+notebook&color=blue)](https://mybinder.org/v2/gh/obidam/ds2-2022/main?labpath=practice%2Fenvironment%2F05-Convert_netcdf_to_zarr.ipynb) |
+| Access to data in the cloud | [![Binder](https://img.shields.io/static/v1.svg?logo=Jupyter&label=Binder&message=Open+notebook&color=blue)](https://mybinder.org/v2/gh/obidam/ds2-2022/main?labpath=practice%2Fenvironment%2F02-Access_to_data_in_the_cloud.ipynb) [![Colab](https://img.shields.io/static/v1?label=Google&message=Open+with+Colab&color=blue&style=plastic&logo=google-colab)](https://colab.research.google.com/github/obidam/ds2-2022/blob/main/practice/environment/02-Access_to_data_in_the_cloud.ipynb) |
+| Access to CMIP6 data | [![Binder](https://img.shields.io/static/v1.svg?logo=Jupyter&label=Binder&message=Open+notebook&color=blue)](https://mybinder.org/v2/gh/obidam/ds2-2022/main?labpath=practice%2Fenvironment%2F06-Access-CMIP6.ipynb) [![Colab](https://img.shields.io/static/v1?label=Google&message=Open+with+Colab&color=blue&style=plastic&logo=google-colab)](https://colab.research.google.com/github/obidam/ds2-2022/blob/main/practice/environment/06-Access-CMIP6.ipynb)  |
+| Dask - graph | [![Binder](https://img.shields.io/static/v1.svg?logo=Jupyter&label=Binder&message=Open+notebook&color=blue)](https://mybinder.org/v2/gh/obidam/ds2-2022/main?labpath=practice%2Fenvironment%2F03-Dask_Graph.ipynb) [![Colab](https://img.shields.io/static/v1?label=Google&message=Open+with+Colab&color=blue&style=plastic&logo=google-colab)](https://colab.research.google.com/github/obidam/ds2-2022/blob/main/practice/environment/03-Dask_Graph.ipynb)  |
+| Xarray | [![Binder](https://img.shields.io/static/v1.svg?logo=Jupyter&label=Binder&message=Open+notebook&color=blue)](https://mybinder.org/v2/gh/obidam/ds2-2022/main?labpath=practice%2Fenvironment%2F04-Xarray_Getting_started.ipynb) [![Colab](https://img.shields.io/static/v1?label=Google&message=Open+with+Colab&color=blue&style=plastic&logo=google-colab)](https://colab.research.google.com/github/obidam/ds2-2022/blob/main/practice/environment/04-Xarray_Getting_started.ipynb) |
+| Convert netcdf files to zarr format | [![Binder](https://img.shields.io/static/v1.svg?logo=Jupyter&label=Binder&message=Open+notebook&color=blue)](https://mybinder.org/v2/gh/obidam/ds2-2022/main?labpath=practice%2Fenvironment%2F05-Convert_netcdf_to_zarr.ipynb) [![Colab](https://img.shields.io/static/v1?label=Google&message=Open+with+Colab&color=blue&style=plastic&logo=google-colab)](https://colab.research.google.com/github/obidam/ds2-2022/blob/main/practice/environment/05-Convert_netcdf_to_zarr.ipynb) |
 
-## Exploratory Statistics
+## Exploratory Statistics: 2022/01/11, 13h45, B01-010
 
 Class will take place in B01-010, January 11st, from 13h45 to 16h30.
 
