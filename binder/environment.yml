@@ -11,7 +11,7 @@ dependencies:
   - intake
   - intake-xarray
   - zarr
-  - graphviz
+  - cartopy
   - pip
   - pip:
     - sat-search
