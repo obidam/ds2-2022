@@ -109,52 +109,60 @@ def plot2d_labels(X, labels, cluster_centers=np.empty(()), dpi=80, kmarkersize=1
     plt.legend()
     return fig, ax, colors
 
-def plot_GMMellipse(gmm,ik,col,ax,label="",std=[1],main_axes=True,**kwargs):
+
+def plot_GMMellipse(gmm, id, ik, col, ax, **kwargs):
     """
         Plot an 1-STD ellipse for a given component (ik) and 2 given dimensions (id)
         of the GMM model gmm
         This is my routine, simply working with a matplotlib plot method
         I also added the possibility to plot the main axes of the ellipse
     """
-    id = [0, 1] # Dimensions id
-    covariances = gmm.covariances_[ik][(id[0],id[0],id[1],id[1]),(id[0],id[1],id[0],id[1])].reshape(2,2)
-    d, v = np.linalg.eigh(covariances) # eigenvectors have unit length
+    defaults = {'label': "", 'std': [1], 'main_axes': True}
+    opts = {**defaults, **kwargs}
+    plot_kw_defaults = {'linewidth': 1}
+    if 'plot_kw' in opts:
+        plot_kw = {**plot_kw_defaults, **opts['plot_kw']}
+    else:
+        plot_kw = plot_kw_defaults
+
+    #     id = [0, 1] # Dimensions id
+    covariances = gmm.covariances_[ik][(id[0], id[0], id[1], id[1]), (id[0], id[1], id[0], id[1])].reshape(2, 2)
+    d, v = np.linalg.eigh(covariances)  # eigenvectors have unit length
     d = np.diag(d)
-    theta = np.arange(0,2*np.pi,0.02)
-    x = np.sqrt(d[0,0])*np.cos(theta)
-    y = np.sqrt(d[1,1])*np.sin(theta)
-    xy = np.array((x,y)).T
+    theta = np.arange(0, 2 * np.pi, 0.02)
+    x = np.sqrt(d[0, 0]) * np.cos(theta)
+    y = np.sqrt(d[1, 1]) * np.sin(theta)
+    xy = np.array((x, y)).T
     ii = 0
-    for nstd in np.array(std):
-        ii+=1
-        ellipse = np.inner(v,xy).T
-        ellipse = nstd*ellipse + np.ones((theta.shape[0], 1))*gmm.means_[ik,(id[0],id[1])]
+    for nstd in np.array(opts['std']):
+        ii += 1
+        ellipse = np.inner(v, xy).T
+        ellipse = nstd * ellipse + np.ones((theta.shape[0], 1)) * gmm.means_[ik, (id[0], id[1])]
         if ii == 1:
-    #            p = ax.plot(ellipse[:,0], ellipse[:,1], color=col, axes=ax, label=("%s (%i-std)")%(label,nstd),**kwargs)
-            p = ax.plot(ellipse[:,0], ellipse[:,1], color=col, axes=ax, label=("%s")%(label),**kwargs)
+            #            p = ax.plot(ellipse[:,0], ellipse[:,1], color=col, axes=ax, label=("%s (%i-std)")%(label,nstd),**kwargs)
+            p = ax.plot(ellipse[:, 0], ellipse[:, 1], color=col, axes=ax, label=("%s") % (opts['label']), **plot_kw)
         else:
-            p = ax.plot(ellipse[:,0], ellipse[:,1], color=col, axes=ax,**kwargs)
-    if main_axes: # Add Main axes:
+            p = ax.plot(ellipse[:, 0], ellipse[:, 1], color=col, axes=ax, **plot_kw)
+    if opts['main_axes']:  # Add Main axes:
         for idir in range(2):
-            l = np.sqrt(d[idir,idir])*v[:,idir].T
-            start = gmm.means_[ik,(id[0],id[1])]-l
-            endpt = gmm.means_[ik,(id[0],id[1])]+l
+            l = np.sqrt(d[idir, idir]) * v[:, idir].T
+            start = gmm.means_[ik, (id[0], id[1])] - l
+            endpt = gmm.means_[ik, (id[0], id[1])] + l
             linex = [start[0], endpt[0]]
             liney = [start[1], endpt[1]]
-            plt.plot(linex,liney,color=col,axes=ax,**kwargs)
+            plt.plot(linex, liney, color=col, axes=ax, **plot_kw)
     return p, ax
 
-def sns_GMMellipse(x,y,gmm=[],std=[1],main_axes=True,label="?",colors=None,**kwargs):
+def sns_GMMellipse(x, y, gmm=[], id=[], std=[1], main_axes=True, label="?", colors=None, **kwargs):
     """
         Same as plot_GMMellipse but works in Seaborn join plots
     """
-    id = [0,1] # Dimensions
+    # id = [0,1] # Dimensions
     K = gmm.n_components
 #    colors = iter(plt.cm.rainbow(np.linspace(0, 1, K)))
 #     colors = sns.color_palette("Paired", K)
     for ik in np.arange(K):
-#        col = next(colors)
-        col = colors[ik]
+        col = next(colors)
         covariances = gmm.covariances_[ik][(id[0],id[0],id[1],id[1]),(id[0],id[1],id[0],id[1])].reshape(2,2)
         d, v = np.linalg.eigh(covariances) #  eigenvectors have unit length
         d = np.diag(d)
@@ -193,6 +201,7 @@ def sns_plot2d_GMM_marginals(df, gmm):
     unique_labels = np.unique(df['labels'])
     n_clusters_ = unique_labels.shape[0]
     colors = sns.husl_palette(n_clusters_)
+
 #     xlim = vrangec(df['x'])
 #     ylim = vrangec(df['y'])
     alim = np.max(np.abs(df[["x", "y"]]).max(axis=1))
@@ -200,19 +209,18 @@ def sns_plot2d_GMM_marginals(df, gmm):
     ylim = np.array([-alim,alim])
 
     # Figure
-    g = sns.JointGrid(x="x", y="y", data=df, size=10, ratio=4, space=0.1,
+    g = sns.JointGrid(x="x", y="y", data=df, height=10, ratio=4, space=0.1,
                       xlim=xlim, ylim=ylim)
     g.fig.suptitle("GMM modes (colors) and Marginal PDFs (black)", fontsize=16)
 
     # cmap = sns.light_palette("gray",reverse=False,as_cmap=True)
     cmap = sns.light_palette("gray", as_cmap=True)
     g.plot_joint(sns.kdeplot, kernel='gau', shade=True,
-                 shade_lowest=False,
+                 thresh=0.05,
                  cmap=cmap, kind='hex', n_levels=30)
     g.plot_joint(sns.kdeplot, kernel='gau', shade=False, n_levels=10, linewidth=0.5)
 
-    g.plot_marginals(sns.distplot, norm_hist=True, kde=False, color=".5")
-    # g.plot_marginals(sns.distplot, hist=False, kde=True, kde_kws={'kernel': 'gau', 'color': 'k', 'linestyle': '--'})
+    g.plot_marginals(sns.histplot, stat='density', kde=False, color=".75")
 
     y = np.linspace(vrangec(df['y'])[0], vrangec(df['y'])[1], 200)
     gmm_pdf = np.zeros(y.shape)
@@ -232,10 +240,9 @@ def sns_plot2d_GMM_marginals(df, gmm):
 
     g.plot_joint(plt.scatter, c=".5", s=1, linewidth=1, marker=".")
 
-    g.plot_joint(sns_GMMellipse, gmm=gmm, main_axes=True, linewidth=3, colors=colors)
+    g.plot_joint(sns_GMMellipse, gmm=gmm, id=[0, 1], main_axes=True, linewidth=3, colors=iter(colors))
 
     # g.ax_joint.legend(prop={'weight': 'bold', 'size': 12}, loc='upper left')
     g.ax_marg_x.legend(prop={'weight': 'bold', 'size': 12}, loc='upper left')
 
     return g
-
