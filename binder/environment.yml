@@ -14,6 +14,7 @@ dependencies:
   - cartopy
   - scikit-learn
   - seaborn
+  - dask-ml
   - pip
   - pip:
     - sat-search
