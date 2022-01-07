@@ -6,11 +6,7 @@
 jupyter lab clean
 
 # Import the workspace into JupyterLab
-#jupyter lab workspaces import binder/workspace.json
-
-# Setup a workspace
-echo $PWD
-ls
-jupyter lab workspaces import jupyterlab-workspace.json
+jupyter lab workspaces import workspace.json
+#jupyter lab workspaces import jupyterlab-workspace.json
 
 #EOF
