@@ -1,0 +1,57 @@
+{
+  "data": {
+    "layout-restorer:data": {
+      "main": {
+        "dock": {
+          "type": "tab-area",
+          "currentIndex": 0,
+          "widgets": [
+            "notebook:practice/exploratory_statistics/Clustering-Tuto-0.ipynb"
+          ]
+        },
+        "current": "notebook:practice/exploratory_statistics/Clustering-Tuto-0.ipynb"
+      },
+      "down": {
+        "size": 0,
+        "widgets": []
+      },
+      "left": {
+        "collapsed": false,
+        "current": "@jupyterlab/toc:plugin",
+        "widgets": [
+          "filebrowser",
+          "running-sessions",
+          "dask-dashboard-launcher",
+          "@jupyterlab/toc:plugin",
+          "extensionmanager.main-view"
+        ]
+      },
+      "right": {
+        "collapsed": true,
+        "widgets": [
+          "jp-property-inspector",
+          "debugger-sidebar"
+        ]
+      },
+      "relativeSizes": [
+        0.17623674911660778,
+        0.8237632508833922,
+        0
+      ]
+    },
+    "file-browser-filebrowser:cwd": {
+      "path": "practice/exploratory_statistics"
+    },
+    "notebook:practice/exploratory_statistics/Clustering-Tuto-0.ipynb": {
+      "data": {
+        "path": "practice/exploratory_statistics/Clustering-Tuto-0.ipynb",
+        "factory": "Notebook"
+      }
+    }
+  },
+  "metadata": {
+    "id": "new-workspace",
+    "last_modified": "2022-01-07T09:51:56.152560+00:00",
+    "created": "2022-01-07T09:51:56.152560+00:00"
+  }
+}
