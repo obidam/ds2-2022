@@ -11,7 +11,7 @@ sources:
           project: 'alert-ground-261008'
           token: anon
           access: read_only
-          consolidated: False
+        consolidated: False
     argo_global_sdl_homogeneous:
       description: Global 0-1500m Standard Depth Level Argo profiles (homogeneously distributed in space)
       driver: zarr
@@ -21,7 +21,7 @@ sources:
           project: 'alert-ground-261008'
           token: anon
           access: read_only
-          consolidated: False
+        consolidated: False
     argo_global_vertical_mean:
       description: Global Argo profiles vertical mean temperature
       driver: zarr
@@ -31,7 +31,7 @@ sources:
           project: 'alert-ground-261008'
           token: anon
           access: read_only
-          consolidated: False
+        consolidated: False
     en4:
       description: Global EN4 time series
       driver: zarr
@@ -41,6 +41,7 @@ sources:
           project: 'alert-ground-261008'
           token: anon
           access: read_only
+        consolidated: true
     sea_surface_height:
       description: Sea-surface altimetry data from The Copernicus Marine Environment (monthly)
       driver: zarr
@@ -50,3 +51,4 @@ sources:
           project: 'alert-ground-261008'
           token: anon
           access: read_only
+        consolidated: true

@@ -1,0 +1,103 @@
+{
+  "data": {
+    "layout-restorer:data": {
+      "main": {
+        "dock": {
+          "type": "split-area",
+          "orientation": "horizontal",
+          "sizes": [
+            0.6538461538461539,
+            0.34615384615384615
+          ],
+          "children": [
+            {
+              "type": "tab-area",
+              "currentIndex": 0,
+              "widgets": [
+                "notebook:practice/exploratory_statistics/Clustering-Tuto-0.ipynb",
+                "notebook:practice/exploratory_statistics/Clustering-Tuto-1.ipynb",
+                "notebook:practice/exploratory_statistics/Clustering-Tuto-2.ipynb",
+                "notebook:practice/exploratory_statistics/Clustering-Tuto-3-PCM.ipynb",
+                "notebook:practice/exploratory_statistics/PCA-Tuto-0.ipynb"
+              ]
+            },
+            {
+              "type": "tab-area",
+              "currentIndex": 0,
+              "widgets": [
+                "markdownviewer-widget:practice/README.md"
+              ]
+            }
+          ]
+        },
+        "current": "notebook:practice/exploratory_statistics/Clustering-Tuto-0.ipynb"
+      },
+      "left": {
+        "collapsed": false,
+        "current": "@jupyterlab/toc:plugin",
+        "widgets": [
+          "filebrowser",
+          "running-sessions",
+          "dask-dashboard-launcher",
+          "@jupyterlab/toc:plugin",
+          "extensionmanager.main-view"
+        ]
+      },
+      "right": {
+        "collapsed": true,
+        "widgets": [
+          "jp-property-inspector",
+          "debugger-sidebar"
+        ]
+      }
+    },
+    "dask-dashboard-launcher": {
+      "url": "http://localhost:8888/dask/dashboard/b9dbfd65-687e-4412-9532-a31a73d45e43",
+      "cluster": ""
+    },
+    "file-browser-filebrowser:cwd": {
+      "path": "practice/exploratory_statistics"
+    },
+    "markdownviewer-widget:practice/README.md": {
+      "data": {
+        "path": "practice/README.md",
+        "factory": "Markdown Preview"
+      }
+    },
+    "notebook:practice/exploratory_statistics/Clustering-Tuto-0.ipynb": {
+      "data": {
+        "path": "practice/exploratory_statistics/Clustering-Tuto-0.ipynb",
+        "factory": "Notebook"
+      }
+    },
+    "notebook:practice/exploratory_statistics/Clustering-Tuto-1.ipynb": {
+      "data": {
+        "path": "practice/exploratory_statistics/Clustering-Tuto-1.ipynb",
+        "factory": "Notebook"
+      }
+    },
+    "notebook:practice/exploratory_statistics/Clustering-Tuto-2.ipynb": {
+      "data": {
+        "path": "practice/exploratory_statistics/Clustering-Tuto-2.ipynb",
+        "factory": "Notebook"
+      }
+    },
+    "notebook:practice/exploratory_statistics/Clustering-Tuto-3-PCM.ipynb": {
+      "data": {
+        "path": "practice/exploratory_statistics/Clustering-Tuto-3-PCM.ipynb",
+        "factory": "Notebook"
+      }
+    },
+    "notebook:practice/exploratory_statistics/PCA-Tuto-0.ipynb": {
+      "data": {
+        "path": "practice/exploratory_statistics/PCA-Tuto-0.ipynb",
+        "factory": "Notebook"
+      }
+    }
+  },
+  "metadata": {
+    "id": "/lab/workspaces/jupyterlab-workspace",
+    "last_modified": "2022-01-07T11:21:44.245689+00:00",
+    "created": "2022-01-07T11:21:44.245689+00:00"
+  }
+}

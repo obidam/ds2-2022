@@ -11,6 +11,6 @@ jupyter lab clean
 # Setup a workspace
 echo $PWD
 ls
-jupyter lab workspaces import jupyterlab-workspace.jupyterlab-workspace.json
+jupyter lab workspaces import jupyterlab-workspace.json
 
 #EOF
