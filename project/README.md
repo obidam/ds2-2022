@@ -2,8 +2,8 @@
 
 ## Github Procedure
 - Fork this github repository to your own account
-- Add a folder under ds2-2021/projects, name it with your last name
-- Work out your project codes/documentation and stage/push it to your folder
+- Add a folder under ds2-2022/projects, name it with your group last names
+- Work out your project codes/documentation and stage/push it to your folder on your fork
 - Once finalized, create a pull request to the main branch
 
 ## Projects #5: Ocean warming
