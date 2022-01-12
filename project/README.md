@@ -14,7 +14,7 @@ You can compute ocean heat content (OHC) and its trend with a regression (linear
 Instead of working globally, you can study the ocean warming locally. In that case, you can plot the local slopes of the different OHC time series and deduce where the ocean warming is moderate and where it is strong.
 
 *Bibliography*:
-[Last IPCC report on Ocean](https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_Chapter_09.pdf), [Ocean warming](https://www.iucn.org/resources/issues-briefs/ocean-warming), [Global Ocean Heat and Salt Content: Seasonal, Yearly, and Pentadal Fields](https://www.ncei.noaa.gov/access/global-ocean-heat-content/), [European Indicator](https://marine.copernicus.eu/access-data/ocean-monitoring-indicators/global-ocean-heat-content-0-2000m)
+[Last IPCC report on Ocean](https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_Chapter_09.pdf#page=35), [Ocean warming](https://www.iucn.org/resources/issues-briefs/ocean-warming), [Global Ocean Heat and Salt Content: Seasonal, Yearly, and Pentadal Fields](https://www.ncei.noaa.gov/access/global-ocean-heat-content/), [European Indicator](https://marine.copernicus.eu/access-data/ocean-monitoring-indicators/global-ocean-heat-content-0-2000m)
 
 *Data*:
 
