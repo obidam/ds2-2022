@@ -13,6 +13,15 @@ You can compute ocean heat content (OHC) and its trend with a regression (linear
 
 Instead of working globally, you can study the ocean warming locally. In that case, you can plot the local slopes of the different OHC time series and deduce where the ocean warming is moderate and where it is strong.
 
+*Bibliography*:
+[Last IPCC report on Ocean](https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_Chapter_09.pdf)
+
+[Ocean warming](https://www.iucn.org/resources/issues-briefs/ocean-warming)
+
+[Global Ocean Heat and Salt Content: Seasonal, Yearly, and Pentadal Fields](https://www.ncei.noaa.gov/access/global-ocean-heat-content/)
+
+[European Indicator](https://marine.copernicus.eu/access-data/ocean-monitoring-indicators/global-ocean-heat-content-0-2000m)
+
 *Data*:
 
 [![Colab](https://img.shields.io/static/v1?label=Google&message=Open+data+with+Colab&color=blue&style=plastic&logo=google-colab)](https://colab.research.google.com/github/obidam/ds2-2022/blob/main/project/Eg_of_access_to_data_in_the_cloud.ipynb)
@@ -39,6 +48,11 @@ But, if you wish, you can try to use [climate model simulations data](https://ww
  
 *Description*: Sea level increases because of changes in currents (dynamic effect) and because of ocean density changes (steric effect). Compute ocean density changes contribution to Sea level rises (thermosteric effect) and demonstrate that it is the driver of regional sea level change trends.
  
+*Bibliography*:
+[Overview](https://sealevel.nasa.gov/understanding-sea-level/overview)
+
+[Deep-ocean contribution to sea level and energy budget not detectable over the past decade](https://www.nature.com/articles/nclimate2387)
+
 *Data*: You can use the [EN4 dataset](https://www.metoffice.gov.uk/hadobs/en4/) that is an interpolation of all available ocean observations (of temperature and salinity) onto a regular space/time grid.
 
 This dataset can be accessed this way:
